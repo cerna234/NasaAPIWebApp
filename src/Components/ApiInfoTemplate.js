@@ -9,7 +9,7 @@ function ApiInfoTemplate(props) {
       <div className='maintainers'>
         <p className='ApiInfoInnerTitle'>MAINTAINERS</p>
         <div className='apiSection'>
-          <p className='ApiSubtext'> David Greenfield, Arezu Sarvestani, Jason English and Peter Baunach.</p>
+          <p className='ApiSubtext'>{props.maintainers}</p>
          
          
         </div>
