@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import { useState } from 'react';
+import{BiMenuAltRight} from "react-icons/bi"
 
 
 
@@ -48,7 +49,7 @@ function NavBar() {
                   
                 }
                 
-            }} className='closeButton' style={{zIndex:"100"}} >MENU</button>
+            }} className='closeButton' style={{zIndex:"100"}} ><BiMenuAltRight/></button>
                
                 <div style={{left:navPosition}} className="navMenu">
                         

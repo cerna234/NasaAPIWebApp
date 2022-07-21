@@ -16,6 +16,7 @@
   height: 80%;
   flex-direction: column;
   text-align: left;
+  padding-top: 15vh;
 
 }
 
@@ -606,6 +607,13 @@ transition: 1s ease-in-out;
       font-size: 25px;
     }
 
+
+.pageTemplateInner{
+  padding-top: 20vh;
+
+}
+
+ 
   
 
 }
