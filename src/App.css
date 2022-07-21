@@ -1,38 +1,613 @@
-.App {
+/* Template Styling */
+.templatePageContainer{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
+.pageTemplateInner{
+  width: 80%;
+  height: 80%;
+  flex-direction: column;
+  text-align: left;
+
+}
+
+.templateTitle{
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.638);
+  font-size: 52px;
+}
+
+.templateSubtext{
+  color: rgba(231, 231, 231, 0.885);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.templateButton{
+  background-color: rgba(38, 38, 38, 0.178);
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px 40px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  position: relative;
+  top: 40px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.683);
+  transition: ease-in-out;
+}
+.templateButton:hover{
+  border: 1px solid rgba(147, 147, 147, 0.677);
+  color: rgb(128, 125, 125);
+}
+
+/* asteroid Page   */
+
+.asteroidPageContainer{
+  background-image: url("https://10wallpaper.com/wallpaper/1920x1080/1208/aesthetic_dream_space_hd_desktop_wallpaper_16_1920x1080.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20vh;
+
+
+  
+  
+}
+
+.pageNumberAsteroid{
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.484);
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.asteroidData{
+  width: 30vh;
+  height:30vh;
+  background-color: rgba(190, 187, 187, 0.103);
+  box-shadow:5px 5px 20px rgba(0, 0, 0, 0.809);
+  font-family: 'Roboto Condensed', sans-serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.454);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid rgba(241, 241, 241, 0.143);
+}
+
+.dataContainer{
+  width: 80%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr ;
+  grid-row-gap:20px;
+  place-items:  center;
+  padding: 20px;
+}
+
+.asteroidHeader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  width: 90%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.59);
+}
+
+.asteroidHazardIndicator{
+  padding: 10px 10px 10px 10px;
+  border-radius: 6px;
+  box-shadow: 4px 3px 8px rgba(0, 0, 0, 0.707);
+  font-size: 10px;
+  color: rgb(233, 232, 232);
+  font-weight: bold;
+}
+.asteroidContainerData{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.asteroidText{
+  color: rgb(205, 203, 203);
+  font-size: 11px;
+  text-shadow: 1px 2px 3px black;
+  font-weight: bold;
+}
+
+.asteroidId{
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.paginationAsteroids{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.paginationButton{
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  background: none;
+}
+
+.paginationButton:hover{
+  color: rgb(172, 168, 168);
+}
+
+.ApiInfoSection{
+  width: 100%;
+  height: 60vh;
+background-color: rgb(46, 46, 46);
+display: flex;
+justify-content: center;
+}
+.ApiInfoSectionInner{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  justify-content: space-evenly;
+
+}
+.ApiInfoTitle{
+  color: rgb(252, 252, 252);
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ApiInfoInnerTitle{
+  color: rgb(255, 255, 255);
+  font-family: 'Orbitron', sans-serif;
+}
+.apiSection{
+ color: rgb(141, 141, 141);
+
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+.ApiSubtext{
+  color: rgba(159, 157, 157, 0.892);
+  font-size: 14px;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.maintainers,.apiLinks{
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  
+}
+
+/* Footer Styling  */
+
+.Footer{
+  width: 100%;
+  height: 30vh;
+  background-color: rgb(15, 15, 15);
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.FooterInner{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
+.logoContainers{
+  
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  text-decoration: none;
+  
+}
+
+.logoContainers a {
+  color: white;
+}
+
+.logoContainers a:hover{
+  color: rgba(255, 255, 255, 0.292);
+}
+
+.Logo{
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 15px;
+  text-shadow: 5px 5px 8px black;
+  text-decoration: none;
+}
+.Logo span{
+  color: red;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+
+/*   navBar styling   */
+.navBar{
+  width: 100%;
+  height: 20vh;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content:center;
+
+}
+
+.NavBarInner{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+
+ 
+
+}
+
+.navSection{
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+
+}
+
+.navSectionLogo{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 50%;
+}
+
+.navLinks{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 20px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.563);
+ 
+  
+
+ 
+}
+
+
+
+.navMenu{
+width: 50%;
+height: 100vh;
+position: fixed;
+left: 0px;
+top: 0px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+background-color: rgb(22, 22, 22);
+transition: 1s ease-in-out;
+
+
+}
+
+.DesktopMenu{
+  display: none;
+}
+
+.closeButton{
+  color: white;
+  font-size: 32px;
+  background-color: rgba(0, 0, 255, 0);
+  border: none;
+  position: relative;
+  text-shadow: 2px 3px 5px black;
+  
+}
+
+
+
+/*  MarsPage Styling */
+.MarsPage{
+  width: 100%;
+  height: 100%;
+  padding-top: 30vh;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(29, 27, 27);
+}
+
+.MarsDataContainer{
+  width: 90%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.08);
+  background-size: cover;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.485);
+}
+
+.MarsDataContainer{
+  width: 30vh;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.marsImage{
+  width: 100%;
+  height: 70%;
+  background-size: cover;
+}
+
+.marsInput{
+  padding: 10px;
+  background-color: rgb(46, 46, 46);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  
+}
+
+.marsInput::placeholder{
+  color: rgba(159, 158, 158, 0.142);
+  font-weight: bold;
+}
+
+
+.submitButton{
+  background-color: rgb(73, 72, 72);
+  padding: 9px;
+  border: none;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.MarsImageData{
+  width: 80%;
+  height: 40%;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.marsDataValue{
+  color: rgb(168, 167, 167);
+  font-size: 10px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.marsDataValue span{
+  color: rgb(255, 254, 254);
+  
+  
+}
+.results{
+  color: rgb(198, 197, 197);
+  font-family: 'Orbitron', sans-serif;
+  padding-top: 20px;
+ 
+}
+
+@media only screen and (min-width: 600px) {
+
+  /* Template mobile Styling   */
+
+  .templateTitle{
+    font-size: 80px;
+   
+  }
+  
+  .templateSubtext{
+    font-size: 15px;
+  }
+
+  .pageTemplateInner{
+    width: 60%;
+    height: 60%;
+  
+  }
+
+  .templatePageContainer{
+    height: 140vh;
+  }
+
+
+  /* Asteroid page mobile Styling   */
+  .dataContainer{
+    grid-template-columns: 1fr  1fr ;
+    grid-template-rows: 1fr 1fr;
+    
+  }
+  .asteroidText{
+    font-size: 11px;
+  }
+  
+  .asteroidId{
+      font-size: 10px;
+  }
+
+  .asteroidHazardIndicator{
+    font-size: 10px;
+  }
+  
+
+}
+
+@media only screen and (min-width: 800px) {
+
+  /* Template mobile Styling   */
+
+  .templateTitle{
+    font-size: 120px;
+   
+  }
+  
+  .templateSubtext{
+    font-size: 15px;
+  }
+
+  .pageTemplateInner{
+    width: 70%;
+    height: 90%;
+  
+  }
+
+  .templatePageContainer{
+    height: 140vh;
+  }
+
+
+  /* Asteroid page mobile Styling   */
+  .dataContainer{
+    grid-template-columns: 1fr  1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+  }
+  .asteroidText{
+    font-size: 15px;
+  }
+  
+  .asteroidId{
+      font-size: 12px;
+  }
+
+  .asteroidHazardIndicator{
+    font-size: 15px;
+  }
+
+  .apiSection{
+    color: rgb(149, 149, 149);
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    
+     
+   }
+
+   .asteroidId{
+    font-size: 20px;
+  }
+
+
+  .FooterInner{
+    flex-direction: row;
+  
+    
+  }
+
+  .ApiInfoSectionInner{
+    width: 50%;
+    
+   
+  
+  }
+  .ApiInfoTitle{
+    font-size: 45px;
+    
+  }
+  
+  .ApiSubtext{
+    
+    font-size: 18px;
+  }
+
+
+
+  
+  
+  .navMenu{
+   display: none;
+   
+    
+    }
+    .closeButton{
+      display: none;
+    }
+    .DesktopMenu{
+      width: 30%;
+  
+      display: flex;
+      justify-content: space-evenly;
+    
+    }
+
+    .NavBarInner{
+      align-items: center;
+      display: flex;
+      
+    
+    }
+    .navLinks:hover{
+      color: red;
+      border-bottom: 1px solid red;
+    
+      transition: 0.5s ease-in-out;
+      
+    }
+
+    .Logo{
+  
+      font-size: 30px;
+
+    }
+
+    .logoContainers{
+      font-size: 25px;
+    }
+
+  
+
+}
+
+
