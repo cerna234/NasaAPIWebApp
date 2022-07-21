@@ -13,8 +13,8 @@ function ApodComponent() {
 
 
       useEffect( () => {
-  getData();
-},[])
+        getData();
+        },[])
 
 
 
