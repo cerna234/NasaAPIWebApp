@@ -1,5 +1,6 @@
 import React from 'react'
 import PageTemplate from '../Components/pageTemplate'
+import ApodComponent from '../Components/ApodComponent'
 
 
 function HomePage() {
@@ -20,6 +21,7 @@ function HomePage() {
             linkTitle="MARS" 
             backgroundImageUrl="https://images.unsplash.com/photo-1571769267292-e24dfadebbdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2090&q=80"
         />
+        <ApodComponent/>
 
         
     </div>
