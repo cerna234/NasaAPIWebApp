@@ -388,27 +388,17 @@ transition: 1s ease-in-out;
   background-size: cover;
 }
 
-.marsInput{
-  padding: 10px;
-  background-color: rgb(46, 46, 46);
-  border: none;
-  color: white;
-  font-weight: bold;
-  font-family: 'Orbitron', sans-serif;
-  
-}
 
-.marsInput::placeholder{
-  color: rgba(159, 158, 158, 0.142);
-  font-weight: bold;
-}
+
+
 
 
 .submitButton{
   background-color: rgb(73, 72, 72);
-  padding: 9px;
+  padding: 10px 20px;
   border: none;
   color: white;
+  font-weight: bold;
   font-family: 'Orbitron', sans-serif;
 }
 
@@ -426,6 +416,16 @@ transition: 1s ease-in-out;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.marsSelect{
+  padding: 10px 30px;
+  background-color: rgb(34, 34, 34);
+  border: none;
+  color: white;
+  
+  font-weight: bold;
+  
 }
 
 .marsDataValue{

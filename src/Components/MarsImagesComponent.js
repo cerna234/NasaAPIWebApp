@@ -7,16 +7,14 @@ function MarsImagesComponent() {
 
     const [Marsdata,setMarsData] = useState({});
     const [CameraOption,setCameraOption] = useState("FHAZ");
+    const [result,setResults] = useState("FHAZ");
     
 
    
     
     
 
-const SubmitName = () => {
-    getData();
-    console.log(CameraOption)
-}
+
 
        
 
@@ -29,26 +27,45 @@ const SubmitName = () => {
       useEffect( () => {
         getData();
       },[])
-   
 
-   
+      const SubmitData = (option) => {
+        getData();
+        setResults(option)
+
+      }
+
+      
    
   return (
     <div className='MarsPage'>
     
 
     <div className='form'>
-        <div>
-        <input type="text" placeholder='ROVER NAME ABBREVIATION' className='marsInput' onChange={ (event) => {setCameraOption(event.target.value)}}></input>
-    
 
-    <button onClick={SubmitName} className="submitButton">SUBMIT</button>
+        <div>
+
+        
+        <select className='marsSelect' onChange={(e) => setCameraOption(e.target.value)}>
+            
+            <option>FHAZ</option>
+            <option>RHAZ</option>
+            <option>MAST</option>
+            <option>CHEMCAM</option>
+            <option>NAVCAM</option>
+        </select>
+        <input className='submitButton' type="submit" onClick={() => {
+            SubmitData(CameraOption)
+        }}></input>
 
         </div>
+        <p className='results'>Showing results for "{result}"</p>
        
-          <p className='results'>SHOWING RESULTS FOR "{CameraOption}"</p>
+       
+   
 
      </div>
+     
+     
         <div className='dataContainer'>
 
             
