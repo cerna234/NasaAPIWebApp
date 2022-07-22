@@ -7,6 +7,7 @@ import AsteroidsPage from "./Pages/AsteroidsPage";
 import MarsPage from "./Pages/MarsPage";
 import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Route path="/marsPage" element={<MarsPage/>} />
     
       </Routes>
-
+    <ScrollToTop/>
       <Footer/>
     </div>
   );
