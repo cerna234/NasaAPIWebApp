@@ -42,7 +42,7 @@ useEffect( () => {
     <div className='dataContainer'>
         {asteroidData.near_earth_objects?.map((value,key) => {
       return(
-        <div className='asteroidData' onClick= {() => {navigate(`/asteroid/${value.id}`)}} >
+        <div className='asteroidData' >
     
         
         
