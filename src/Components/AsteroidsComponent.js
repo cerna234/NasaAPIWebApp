@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react'
 import axios from "axios"
 import { useNavigate } from "react-router-dom";
 import { AiOutlineLeftSquare,AiOutlineRightSquare } from 'react-icons/ai';
+import { ThreeCircles } from 'react-loader-spinner';
 
 
 
@@ -40,34 +41,59 @@ useEffect( () => {
         <p className='pageNumberAsteroid' >{page}/1468</p>
 
     <div className='dataContainer'>
-        {asteroidData.near_earth_objects?.map((value,key) => {
-      return(
-        <div className='asteroidData' >
-    
-        
-        
-        <div className='asteroidHeader'>
-            <p className='asteroidId' >{value.id}</p>
-            <p className='asteroidHazardIndicator' style={{backgroundColor: value.is_potentially_hazardous_asteroid === true ? "rgb(180, 35, 6)": "rgb(4, 67, 4)"}}> {value.is_potentially_hazardous_asteroid === true ? "THREAT" : "NON-THREAT"}</p>
-        </div>
-        <div className='asteroidContainerData'>
-            <p className='asteroidText'>{value.name}</p>
-            <p className='asteroidText'> MAGNITUDE: {value.absolute_magnitude_h}</p>
-            <p className='asteroidText'> ESTIMATED DIAMETER: {value.estimated_diameter.miles.estimated_diameter_max}</p>
-        
-
-
-        </div>
-       
+        {asteroidData.near_earth_objects  ? 
+          asteroidData.near_earth_objects?.map((value,key) => {
+            return(
+              <div className='asteroidData' >
+          
+              
+              
+              <div className='asteroidHeader'>
+                  <p className='asteroidId' >{value.id}</p>
+                  <p className='asteroidHazardIndicator' style={{backgroundColor: value.is_potentially_hazardous_asteroid === true ? "rgb(180, 35, 6)": "rgb(4, 67, 4)"}}> {value.is_potentially_hazardous_asteroid === true ? "THREAT" : "NON-THREAT"}</p>
+              </div>
+              <div className='asteroidContainerData'>
+                  <p className='asteroidText'>{value.name}</p>
+                  <p className='asteroidText'> MAGNITUDE: {value.absolute_magnitude_h}</p>
+                  <p className='asteroidText'> ESTIMATED DIAMETER: {value.estimated_diameter.miles.estimated_diameter_max}</p>
+              
       
-       
-        
+      
+              </div>
+             
+            
+             
+              
+      
+              </div>
+              
+             
+            )
+           })
 
+        : 
+
+
+        <div className='loading'>
+
+      <ThreeCircles
+        height="100"
+        width="100"
+        color="#FF0000"
+        wrapperStyle={{}}
+        wrapperClass=""
+        visible={true}
+        ariaLabel="three-circles-rotating"
+        outerCircleColor=""
+        innerCircleColor=""
+        middleCircleColor=""
+      />
         </div>
+      
         
-       
-      )
-     })}
+        }
+
+   
 
 
 

@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-
+import { ThreeCircles } from 'react-loader-spinner';
 
 import axios from 'axios'
 
@@ -68,39 +68,61 @@ function MarsImagesComponent() {
      
         <div className='dataContainer'>
 
+            {Marsdata.photos ?
             
 
-            {Marsdata.photos?.map((value,key) => {
+            Marsdata.photos?.map((value,key) => {
 
                    
 
 
                    
                     
-                    return (
-                    
-                        <div className='MarsDataContainer'>
-    
-                           
-                            <div style={{backgroundImage:`url(${value.img_src})`}}  className="marsImage"  >
-    
-                            </div>
-                            <div className='MarsImageData'>
-                                <p className='marsDataValue'><span>ROVER NAME:</span>   {value.rover.name}</p>
-                                <p className='marsDataValue'><span>STATUS:</span>   {value.rover.status}</p>
-                                <p className='marsDataValue'><span>LANDING DATE:</span>   {value.rover.landing_date}</p>
-                            </div>
+                return (
+                
+                    <div className='MarsDataContainer'>
 
-                            
+                       
+                        <div style={{backgroundImage:`url(${value.img_src})`}}  className="marsImage"  >
+
                         </div>
-                        
-                    )
+                        <div className='MarsImageData'>
+                            <p className='marsDataValue'><span>ROVER NAME:</span>   {value.rover.name}</p>
+                            <p className='marsDataValue'><span>STATUS:</span>   {value.rover.status}</p>
+                            <p className='marsDataValue'><span>LANDING DATE:</span>   {value.rover.landing_date}</p>
+                        </div>
 
-                
-               
-                
-                
-            })}
+                        
+                    </div>
+                    
+                )
+
+            
+           
+            
+            
+        })
+
+            : 
+            
+                <div className='loading'>
+
+                    <ThreeCircles
+                        height="100"
+                        width="100"
+                        color="#FF0000"
+                        wrapperStyle={{}}
+                        wrapperClass=""
+                        visible={true}
+                        ariaLabel="three-circles-rotating"
+                        outerCircleColor=""
+                        innerCircleColor=""
+                        middleCircleColor=""
+                    />
+            </div>
+            }
+
+         
          
 
         </div>
