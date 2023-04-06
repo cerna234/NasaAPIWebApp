@@ -6,10 +6,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 1000px;
+  min-width: 300px;
   
 }
 
-
+.templateContainer{
+  width: 100%;
+  height: 100%;
+  
+}
 
 .pageTemplateInner{
   width: 80%;
@@ -17,6 +23,7 @@
   flex-direction: column;
   text-align: left;
   padding-top: 15vh;
+  min-height: 500px;
 
 }
 
@@ -56,6 +63,14 @@
   font-weight: bold;
 }
 
+.loading{
+  width: 80vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;;
+}
+
 /* asteroid Page   */
 
 .asteroidPageContainer{
@@ -81,9 +96,9 @@
 }
 
 .asteroidData{
-  width: 30vh;
-  height:30vh;
-  background-color: rgba(190, 187, 187, 0.103);
+  width: 90%;
+  height:90%;
+  background-color: rgba(64, 64, 64, 0.312);
   box-shadow:5px 5px 20px rgba(0, 0, 0, 0.809);
   font-family: 'Roboto Condensed', sans-serif;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.454);
@@ -93,6 +108,7 @@
   justify-content: space-evenly;
   align-items: center;
   border: 2px solid rgba(241, 241, 241, 0.143);
+  
 }
 
 .dataContainer{
@@ -104,6 +120,7 @@
   grid-row-gap:20px;
   place-items:  center;
   padding: 20px;
+  min-height: 800px;
 }
 
 .asteroidHeader{
@@ -167,6 +184,7 @@
 background-color: rgb(46, 46, 46);
 display: flex;
 justify-content: center;
+min-height: 600px;
 }
 .ApiInfoSectionInner{
   width: 80%;
@@ -219,6 +237,7 @@ justify-content: center;
   align-items: center;
   justify-content: center;
   color: white;
+  min-height: 200px;
 }
 
 .FooterInner{
@@ -375,11 +394,12 @@ transition: 1s ease-in-out;
 }
 
 .MarsDataContainer{
-  width: 30vh;
-  height: 30vh;
+  width: 90%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 250px;
 }
 
 .marsImage{
@@ -528,6 +548,7 @@ transition: 1s ease-in-out;
 
   .templatePageContainer{
     height: 140vh;
+    min-height: none;
   }
 
 
@@ -711,7 +732,7 @@ transition: 1s ease-in-out;
   .templatePageContainer{
     
     height: 300vh;
-    
+    min-height: none;
     
   }
 
